@@ -222,14 +222,24 @@ section.main-section::after {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 760px) {
   .main-section {
     max-width: 80%;
+    margin: 20px 0;
   }
 
   .auth-image {
     max-width: 80%;
   }
+
+  #logo {
+    margin-left: 3%;
+  }
+
+  .nav {
+    margin-left: 3%;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
