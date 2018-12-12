@@ -126,11 +126,10 @@ h3, h2 {
 }
 
 .main-section {
-  float: left;
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  margin: 0 0 40px;
+  margin: 0 auto 40px auto;
   background: #ffffff;
   border: 1px solid #dddddd;
 }
@@ -216,3 +215,29 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+section.main-section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+@media screen and (max-width: 980px) {
+  .main-section {
+    max-width: 80%;
+  }
+
+  .auth-image {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+element.style {
+  margin: 20px 0;
+  width: 100%;
+}
+
+
+
